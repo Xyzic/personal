@@ -5,26 +5,24 @@
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"> </script>
   </head>
-  <body> This is the first visualization for A3 IS545
-      <div id="vis"></div>
-      <button id="addvis">Add Vis</button>
+  <body> WIP Personal Page
   </body>
   <script>
-  var starAge =
-    {
-      "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-      "data": {"url": "https://raw.githubusercontent.com/Xyzic/IS545/main/datasets/exoplanets.json?token=AA6RB2WCWFITE3RQAOQS4N3AH4HQO"},
-      "title": "Binned Star Ages vs. Star Mass",
-      "mark": {"type": "bar"},
-      "encoding": {
-        "x": {"field": "star_age", "type": "quantitative", "bin": true},
-        "y": {"aggregate": "count", "type": "quantitative"}
-      }
-    };
-    document.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("addvis").addEventListener("click", (event) => {
-            var embedded = vegaEmbed('#vis', starAge);
-        });
-    });
-  </script>
+  // var starAge =
+  //   {
+  //     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  //     "data": {"url": "https://raw.githubusercontent.com/Xyzic/IS545/main/datasets/exoplanets.json?token=AA6RB2WCWFITE3RQAOQS4N3AH4HQO"},
+  //     "title": "Binned Star Ages vs. Star Mass",
+  //     "mark": {"type": "bar"},
+  //     "encoding": {
+  //       "x": {"field": "star_age", "type": "quantitative", "bin": true},
+  //       "y": {"aggregate": "count", "type": "quantitative"}
+  //     }
+  //   };
+  //   document.addEventListener("DOMContentLoaded", () => {
+  //       document.getElementById("addvis").addEventListener("click", (event) => {
+  //           var embedded = vegaEmbed('#vis', starAge);
+  //       });
+  //   });
+  // </script>
 </html>
